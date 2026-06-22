@@ -1,0 +1,17 @@
+Dataset Name:
+Fallen Trees (with Palms)
+
+Source:
+Roboflow Universe
+
+Link:
+https://universe.roboflow.com/neerumk23-iitk-ac-in/fallen-trees-with-palms-gele3
+
+Images:
+8704
+
+Classes:
+fallen_tree
+
+Format:
+YOLO

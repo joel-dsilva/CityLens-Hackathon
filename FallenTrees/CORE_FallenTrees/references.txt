@@ -1,0 +1,11 @@
+Roboflow Universe Dataset
+https://universe.roboflow.com/neerumk23-iitk-ac-in/fallen-trees-with-palms-gele3
+
+Ultralytics YOLO11 Documentation
+https://docs.ultralytics.com
+
+ChatGPT
+Used for debugging, implementation support, analytics design, and documentation.
+
+Claude
+Used for README structuring and submission packaging guidance.

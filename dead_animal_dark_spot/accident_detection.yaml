@@ -1,0 +1,20 @@
+# ============================================================
+# config/accident_detection.yaml
+# YOLO dataset config for accident detection (feeds the dark-spot /
+# black-spot frequency analysis in src/dark_spot_clustering.py).
+#
+# KPI requirement: "Detect accidents on roads" — this model flags
+# individual accident events per frame. Dark-spot *locations* are
+# then derived separately by aggregating these detections (or
+# historical accident records) by road segment / camera location
+# and counting frequency over time.
+# ============================================================
+
+path: ../dataset/accidents
+train: images/train
+val: images/val
+test: images/test
+
+names:
+  0: accident          # vehicle collision / crash scene
+  1: near_miss          # optional: harsh braking / swerving precursor event

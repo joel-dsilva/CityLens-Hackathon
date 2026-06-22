@@ -1,0 +1,27 @@
+# ============================================================
+# config/dead_alive_classes.yaml
+# This is a YOLO-CLASSIFICATION dataset (not detection).
+# Ultralytics classification expects a folder layout, not a yaml,
+# but we keep this file as a reference for class names + folder spec.
+#
+# Expected folder structure (ImageNet-style, used directly by
+# YOLO classification training — see train_dead_alive_classifier.py):
+#
+#   dataset/dead_alive/
+#       train/
+#           alive/   *.jpg   (cropped animal images, animal alive/standing/moving)
+#           dead/    *.jpg   (cropped animal images, animal dead/carcass)
+#       val/
+#           alive/   *.jpg
+#           dead/    *.jpg
+#
+# Crops should come from running the species detector (stage 1) on
+# raw frames and saving each detected bounding-box crop, then manually
+# sorting/labeling them into alive/ and dead/. This keeps the dead/alive
+# classifier focused only on the animal region, which is far more
+# sample-efficient than training a full detector with dead_X/alive_X
+# classes per species.
+# ============================================================
+names:
+  0: alive
+  1: dead

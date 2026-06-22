@@ -1,0 +1,24 @@
+# ============================================================
+# config/animal_species.yaml
+# YOLO dataset config for STAGE 1: Animal species detection.
+# Update `path` to point at your prepared dataset (see
+# dataset_prep/README.md for the expected folder layout).
+# ============================================================
+
+path: ../dataset/animal_species   # root dir containing images/ and labels/
+train: images/train
+val: images/val
+test: images/test                 # optional
+
+# Class list — animal type categorization (KPI requirement: "Animal type
+# categorization"). Add/remove species to match what's common in your
+# city's CCTV footage / source dataset.
+names:
+  0: dog
+  1: cow
+  2: goat
+  3: cat
+  4: pig
+  5: horse
+  6: monkey
+  7: other_animal
